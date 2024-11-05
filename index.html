@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotus Restaurant</title>
+   
+    <!-- Bootstrap CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <!-- link to style.css file -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- Navbar code Here , Navigation bar with links to Home, Menu, Testimonials, and Contact -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#home">Lotus</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span> 
+             <!--Ensure the navbar collapses into a mobile-friendly hamburger menu.-->
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav"> 
+            <!--Ensure the navbar collapses into a mobile-friendly hamburger menu.-->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <!-- Hero Section ( resturant Introduction )-->
+
+    <section id="home" class="hero jumbotron text-center">
+        <!--Use Bootstrap’s Jumbotron component -->
+
+        <div class="container">
+            <h1 class="display-4">Welcome to Lotus</h1> <!-- Restaurant Name or Introduction -->
+            <p class="lead">Welcome to Lotus, where the rich flavors of Persia come to life.
+                 Our restaurant is dedicated to bringing you an authentic Persian dining experience, 
+                 filled with fragrant spices, bold flavors, and centuries-old recipes passed down through generations. 
+                 Every dish is carefully prepared with fresh ingredients and a touch of traditional Persian hospitality,
+                 making each meal a journey to the heart of Iran.</p> <!-- Short tagline or welcome message -->
+            <a href="#menu" class="btn btn-primary">View Menu</a>
+        </div>
+    </section>
+
+    
+
+    <!-- Highlights Section to show the  -->
+     <!-- 3 features with images  -->
+      <!--Bootstrap cards -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="text-center">Menu</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./pictures/kebab.jpg" class="card-img-top" alt="Dish 1">
+                        <div class="card-body">
+                            <h3 class="card-title">Kebab</h3><!-- Dish 1 Name -->
+                            <p class="card-text">Fresh meat, chiken, with rice and salad.</p><!-- Dish 1 Description -->
+                            <p><strong>Price:</strong> $32.99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./pictures/Morasa Polo.jpeg" class="card-img-top" alt="Dish 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Morasa Polo</h5><!-- Dish 2 Name -->
+                            <p class="card-text">Tender chiken fillet, rice & zereshk.</p><!-- Dish 1 Description -->
+                            <p><strong>Price:</strong> $23.99</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./pictures/ghorme sabzi.jpeg" class="card-img-top" alt="Dish 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Khoresht Ghorme</h5><!-- Dish 3 Name -->
+                            <p class="card-text">Fresh lamb, herbs, rice with zaffron.</p><!-- Dish 1 Description -->
+                            <p><strong>Price:</strong> $20.99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Testimonials Section  -->
+     <!-- Customers review for resturant  -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="text-center"> Our Customers Reviews </h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <blockquote class="blockquote">  <!-- Testimonial 1 -->
+                        "Amazing Persian food! The atmpspher was great, 
+                        with lots of seating available & lovely ambiance. Large portion!"
+                        <br> <!-- next line -->
+                    </br> 
+                        <footer class="blockquote-footer">- Tara M.</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="blockquote"> <!-- Testimonial 2 -->
+                        "A Solid Five stars, this place serves up awsome Persian food in a nice casual environment."
+                        <br> <!-- next line -->
+                    </br> 
+                        <footer class="blockquote-footer">- James K.</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="blockquote">  <!-- Testimonial 3 -->
+                        "Highly recommended the resturant. The food was fantastic.
+                         All the dishes, particularly the meat ones, with high quality and full of flavour."
+                         <br> <!-- next line -->
+                        </br> 
+                        <footer class="blockquote-footer">- Emily R.</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="date">Reservation Date</label>
+                    <input type="date" class="form-control" id="date">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Special Requests"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <!-- Include Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+
+</body>
+</html>
